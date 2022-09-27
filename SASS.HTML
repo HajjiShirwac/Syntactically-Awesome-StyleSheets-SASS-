@@ -65,6 +65,11 @@
   .text-#{$j} {font-size: 15px * $j;}
 }
 
+//Use @each to Map Over Items in a List
+ 
+@each $color in blue, black, red {
+    .#{$color}-bg {background-color: $color;}
+  } 
   } */
   </style>
   
