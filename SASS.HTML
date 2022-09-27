@@ -27,7 +27,7 @@
     */
 
     /* Create Reusable CSS with Mixins
-    
+
     @mixin border-radius($radius){
      -webkit-border-radius:$radius;
     -moz-border-radius:$radius;
@@ -41,6 +41,24 @@
     height: 150px;
     background-color: green;
     @include border-radius(15px);
+    
+    // Use @if and @else to Add Logic To Your Styles
+    
+    @mixin border-stroke($val){
+  @if $val == light{
+    border: 1px solid black;
+  }
+  @else if $val == medium{
+    border: 3px solid black;
+  }
+  @else if $val == heavy {
+    border : 6px solid black;
+  }
+  @else{
+    border : none;
+  }
+}
+
   } */
   </style>
   
